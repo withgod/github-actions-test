@@ -12,7 +12,9 @@ echo 2
 # sudo apt-get purge 'php*'
 if [ $release == 'xenial' ]
 then
+    echo 2-1
 	sudo apt-fast purge 'libssl1.1'
+    echo 2-2
 	sudo apt-fast purge 'postgresql*'
 fi
 echo 3
