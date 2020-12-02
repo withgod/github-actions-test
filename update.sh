@@ -12,6 +12,8 @@ echo 2
 # sudo apt-get purge 'php*'
 if [ $release == 'xenial' ]
 then
+    apt-cache show ca-certificates-java
+    sudo apt-get install ca-certificates-java
     echo 2-0
 	sudo apt-fast purge 'openjdk-8-jre-headless'
     echo 2-1
