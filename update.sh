@@ -12,7 +12,8 @@ echo 2
 # sudo apt-get purge 'php*'
 if [ $release == 'xenial' ]
 then
-    apt-cache show openjdk-8-jre-headless
+    apt-get install openjdk-8-jdk
+    #apt-cache show openjdk-8-jre-headless
     #apt-cache show ca-certificates-java
     #sudo apt-get install ca-certificates-java
     echo 2-0
