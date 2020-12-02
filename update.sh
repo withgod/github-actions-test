@@ -12,15 +12,17 @@ echo 2
 # sudo apt-get purge 'php*'
 if [ $release == 'xenial' ]
 then
-    sudo apt-get purge -y bazel
-    sudo rm -f /etc/apt/sources.list.d/bazel.list
-    sudo apt-get update
+    #sudo apt-get purge -y bazel
+    #sudo rm -f /etc/apt/sources.list.d/bazel.list
+    #sudo apt-get update
     #sudo apt-get install openjdk-8-jdk
     #apt-cache show openjdk-8-jre-headless
     #apt-cache show ca-certificates-java
     #sudo apt-get install ca-certificates-java
     #echo 2-0
 	#sudo apt-fast purge 'openjdk-8-jre-headless'
+    apt-cache show openjdk-8-jre-headless
+    apt-cache show ca-certificates-java
     echo 2-1
 	sudo apt-fast purge 'libssl1.1'
     echo 2-2
