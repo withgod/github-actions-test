@@ -1,5 +1,10 @@
 #!/bin/sh
 
+set -eo pipefail
+
+release=$(lsb_release -cs)
+version=$1
+
 sudo apt-fast update
 
 # sudo apt-get purge 'php*'
